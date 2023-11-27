@@ -6,7 +6,7 @@ const CarsTable = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetchAny('http://46.101.183.184:3005/api/v1/cars/sdfsdf', 
+    fetchAny('http://46.101.183.184:3005/api/v1/cars/', 
     (data) => {setCars(data.cars)}, 
     (err) => {setError(err)}, 
     'GET', null,null);
